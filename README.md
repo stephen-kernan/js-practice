@@ -120,6 +120,17 @@ git push origin {{ BRANCH NAME HERE }}
 
 #### 4. Open a PR (Pull Request) on GitHub
 
-Navigate to [the project on GithHub](https://github.com/stephen-kernan/js-practice). If you just pushed your changes, you may see a yellow prompt at the top of your screen that allows you to start a PR on your branch. If so, click that and fill out the form.
+Navigate to [the project on GithHub](https://github.com/stephen-kernan/js-practice). If you just pushed your changes, you may see a yellow prompt at the top of your screen that says `{{ BRANCH NAME HERE }} had recent pushes`. If so, click the `Compare & pull request` button and fill out the form.
 
-If you don't see the popup, 
+If you don't see the popup, follow these steps to make a PR manually:
+
+1. Navigate to the `Pull Requests` tab from the Project page on GitHub
+2. Click the `Create pull request` button in the top right corner
+3. Select your branch from the links, or manually change the `compare:` branch dropdown to your branch name
+4. You should see your changes show up on the screen
+5. Click the `Create pull request` button in the top right corner
+6. Fill out the form
+   1. Change the title to `{{ YOUR NAME }} - {{ MONTH }} - {{ DATE }}`
+   2. Leave a comment, or don't. Totally up to you.
+   3. Add `stephen-kernan` as a reviewer in the sidebar on the right side
+   4. Add yourself as an assignee in the sidebar on the right side
