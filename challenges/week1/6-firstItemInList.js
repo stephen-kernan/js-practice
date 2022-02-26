@@ -1,15 +1,10 @@
 import { createInterface } from "readline";
 
-// create a function that returns only the first letter of a word
+// create a function that returns only the first item in an array
 // if it's not possible based on input, return a string that says 'Error processing data'
 
-export const findFirstItemInList = (list) => {
+export const findFirstItemInList = () => {
   // do something here
-  if (!Array.isArray(list) || !list.length) {
-    return "Error processing data";
-  }
-
-  return list[0];
 };
 
 // UNCOMMENT EVERYTHING IN THIS LINE TO TRY IT OUT IN TERMINAL
@@ -18,14 +13,12 @@ export const findFirstItemInList = (list) => {
 //   output: process.stdout,
 // });
 
-// term.question("Please enter two numbers separated by one space\n", (input) => {
+// term.question("Please enter a list of items\n", (input) => {
 //   try {
-//     const parsedInput = input.split(" ");
-//     const [firstNumber, secondNumber] = parsedInput;
-
+//     const parsedInput = JSON.parse(input)
 //     console.log(
 //       "Result: ",
-//       createSum(Number(firstNumber), Number(secondNumber))
+//       findFirstItemInList(parsedInput)
 //     );
 //   } catch (e) {
 //     console.log("Error: ", e);
