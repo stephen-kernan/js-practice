@@ -81,7 +81,7 @@ Each day's challenge has some code at the bottom that's commented out. It looks 
 
 Uncomment the code from `const term...`  to the end of the file. Now, you can run your code in the terminal by running `node {NAME OF FILE}` from in the *root folder of the week* (i.e., `/challenges/week1`).
 
-#### 3. Running the Tests in VS Code
+#### 2. Running the Tests in VS Code
 This is one of the quickest ways to see your results in comparison to what is expected. You can run tests in VS Code pretty easily and your results will be shown in the built-in terminal.
 
 1. Install the `Jest Runner` extension for VS Code (by firsttris)
@@ -91,7 +91,7 @@ This is one of the quickest ways to see your results in comparison to what is ex
 5. Click on `Run` and VS Code will run through the tests inside of the block you clicked on. You can run one single test or an entire file, depending on where you click `Run`
 6. If your test passes, great! If not, you'll see what the answer was supposed to be and can adjust accordingly
 
-#### 4. Running the Tests in the Terminal
+#### 3. Running the Tests in the Terminal
 You can also run your tests directly from your terminal. This gives slightly more flexibility for running *all* tests or running tests with advanced options, but in most cases VS Code should be sufficient for tests in an individual file.
 
 To run all tests:
@@ -101,7 +101,7 @@ To run only the tests related to the current week:
 `npm run test:current`
 
 
-#### 2. Running the Tests in DEBUG mode
+#### 4. Running the Tests in DEBUG mode
 
 Sometimes, the output that you get is not very helpful. In these cases, it's helpful to run your code in DEBUG mode so that you can walk through line-by-line to see what's going wrong. Here's the easiest way to do that:
 
