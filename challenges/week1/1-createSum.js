@@ -3,8 +3,17 @@ import { createInterface } from "readline";
 // create a function that returns the sum of two numbers
 // if the input is bad, return a string that says 'Error processing data'
 
-export const createSum = () => {
+export const createSum = (a, b) => {
   // do something here
+  if (typeof a !== "number" || typeof b !== "number") {
+    return "Error processing data"
+  }
+
+  if (!a || !b) {
+    return "Error processing data";
+  }
+
+  return a + b
 };
 
 // UNCOMMENT EVERYTHING IN THIS LINE TO TRY IT OUT IN TERMINAL

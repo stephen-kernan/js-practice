@@ -1,12 +1,13 @@
 # js-practice
-Practice questions for Javascript. Should take ~5-15 minutes per day
+Practice questions for Javascript designed to keep a beginner's skills sharp. This list will be updates with seven new challenges each week, which should each take ~5-15 minutes. 
 
 ## Getting Started
 
 1. Clone the project
-  a. Click green button that says 'Code'
-  b. Copy the code inside the box that pops up
-  c. In your terminal, `cd` into the parent folder that you want to store this project in. For most people, it's their root folder (`cd ~`)
+   1. Go to [the project page on Github](https://github.com/stephen-kernan/js-practice)
+   2. Click green button that says 'Code'
+   3. Copy the code inside the box that pops up
+   4. In your terminal, `cd` into the parent folder that you want to store this project in. For most people, it's their root folder (`cd ~`)
 2. Install the dependencies
   a. Use `cd js-practice` to switch into the project folder
   b. Run `npm install` to install any packages listed in the `package.json`
@@ -28,7 +29,7 @@ git pull origin main
 
 #### 2. Create a new branch for your solution
 
-We want to make sure your changes are isolated from the main branch until we know that it's a correct solution. Name your branch as `{name}-{month}-{day}`. For example `stephen-02-20`.
+We want to make sure your changes are isolated from the main branch until we know that it's a correct solution. Name your branch as `{name}-week-{week_number}`. For example `stephen-week-1`.
 
 To create your branch, run:
 ```sh
