@@ -1,18 +1,24 @@
 # js-practice
-Practice questions for Javascript. Should take ~5-15 minutes per day
+Practice questions for Javascript designed to keep a beginner's skills sharp. This list will be updates with seven new challenges each week, which should each take ~5-15 minutes. 
+
+## Contents
+* [Getting Started](#getting-started)
+* [Completing the Challenges](#completing-the-challenges)
+* [Method for Solving Challenges](#method-for-solving-challenges)
 
 ## Getting Started
 
 1. Clone the project
-  a. Click green button that says 'Code'
-  b. Copy the code inside the box that pops up
-  c. In your terminal, `cd` into the parent folder that you want to store this project in. For most people, it's their root folder (`cd ~`)
+   1. Go to [the project page on Github](https://github.com/stephen-kernan/js-practice)
+   2. Click green button that says 'Code'
+   3. Copy the code inside the box that pops up
+   4. In your terminal, `cd` into the parent folder that you want to store this project in. For most people, it's their root folder (`cd ~`)
 2. Install the dependencies
   a. Use `cd js-practice` to switch into the project folder
   b. Run `npm install` to install any packages listed in the `package.json`
 
 
-## Completing the Challenge
+## Completing the Challenges
 
 ### Setup
 
@@ -28,7 +34,7 @@ git pull origin main
 
 #### 2. Create a new branch for your solution
 
-We want to make sure your changes are isolated from the main branch until we know that it's a correct solution. Name your branch as `{name}-{month}-{day}`. For example `stephen-02-20`.
+We want to make sure your changes are isolated from the main branch until we know that it's a correct solution. Name your branch as `{name}-week-{week_number}`. For example `stephen-week-1`.
 
 To create your branch, run:
 ```sh
@@ -134,3 +140,17 @@ If you don't see the popup, follow these steps to make a PR manually:
    2. Leave a comment, or don't. Totally up to you.
    3. Add `stephen-kernan` as a reviewer in the sidebar on the right side
    4. Add yourself as an assignee in the sidebar on the right side
+
+## Method for Solving Challenges
+> MORE DETAILED GUIDE COMING SOON
+
+Questions to ask, in order:
+1. What kind of data needs to be passed in to this function?
+   1. How many pieces of data should I expect to receive?
+   2. What datatype will I be dealing with for each parameter?
+2. How do I return what the problem is asking for, assuming that the data is given to me in the best case scenario exactly as I need it?
+3. What could go wrong based on the type of data that's provided?
+   1. What if someone gives me nothing?
+   2. What if someone gives me the wrong *datatype*, so my logic breaks?
+   3. For complex/advanced datatypes, such as objects or arrays, what else could go wrong (i.e., empty list, key is missing from object, etc.)?
+4. How can I protect the code so that it doesn't break if any of these things do go wrong?
