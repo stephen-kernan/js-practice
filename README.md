@@ -79,28 +79,38 @@ Each day's challenge has some code at the bottom that's commented out. It looks 
 // });
 ```
 
-Uncomment the code from `const term...`  to the end of the file. Now, you can run your code in the terminal by running `node today` from in the *root folder of this project*.
+Uncomment the code from `const term...`  to the end of the file. Now, you can run your code in the terminal by running `node {NAME OF FILE}` from in the *root folder of the week* (i.e., `/challenges/week1`).
 
-#### 2. Running the code in DEBUG mode
+#### 3. Running the Tests in VS Code
+This is one of the quickest ways to see your results in comparison to what is expected. You can run tests in VS Code pretty easily and your results will be shown in the built-in terminal.
+
+1. Install the `Jest Runner` extension for VS Code (by firsttris)
+2. Set a debugger in your code on the line where you'd like to pause. You can do this in VS Code by hovering your mouse to the left of the line numbers, then clicking the little red circle that appears. The red dot should persist, but you can remove it by clicking the red dot again.
+3. Open the `{{ CHALLENGE NAME }}.test.js` file inside the `/tests` directory
+4. You should see something like `Run | Debug` over each `describe` or `it` block. 
+5. Click on `Run` and VS Code will run through the tests inside of the block you clicked on. You can run one single test or an entire file, depending on where you click `Run`
+6. If your test passes, great! If not, you'll see what the answer was supposed to be and can adjust accordingly
+
+#### 4. Running the Tests in the Terminal
+You can also run your tests directly from your terminal. This gives slightly more flexibility for running *all* tests or running tests with advanced options, but in most cases VS Code should be sufficient for tests in an individual file.
+
+To run all tests:
+`npm run test`
+
+To run only the tests related to the current week:
+`npm run test:current`
+
+
+#### 2. Running the Tests in DEBUG mode
 
 Sometimes, the output that you get is not very helpful. In these cases, it's helpful to run your code in DEBUG mode so that you can walk through line-by-line to see what's going wrong. Here's the easiest way to do that:
 
 1. Install the `Jest Runner` extension for VS Code (by firsttris)
 2. Set a debugger in your code on the line where you'd like to pause. You can do this in VS Code by hovering your mouse to the left of the line numbers, then clicking the little red circle that appears. The red dot should persist, but you can remove it by clicking the red dot again.
-3. Open the `today.test.js` file from inside the `/tests` directory (or, if you're catching up on a previous challenge, the test that corresponds to the file you're working in)
+3. Open the `{{ CHALLENGE NAME }}.test.js` file inside the `/tests` directory
 4. You should see something like `Run | Debug` over each `describe` or `it` block. Click on `Debug` and VS Code will walk pause on any debuggers you have set. 
 5. Now that you are paused, you can walk through the code with the controls provided in VS Code.
 6. When you're finished, remove the debuggers by clicking on the red dot.
-
-### Running the Tests
-
-When you think you've solved the practice problem of the day, go ahead and run the tests to validate your code in the terminal (or in VS Code with the Jest Test Runner). If you're running in the terminal, make sure that *you are in the `/js-practice` directory*
-
-To run all tests:
-`npm run test`
-
-To run only the tests related to today's project:
-`npm run test:today`
 
 ### Submit Your Code
 
