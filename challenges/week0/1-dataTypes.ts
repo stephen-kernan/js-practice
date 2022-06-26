@@ -8,7 +8,15 @@ Replace the 'undefined' value next to the datatype with
 an example of the appropriate datatype.
 */
 
-export const dataTypes = {
+export const dataTypes: {
+  null: null;
+  string: string;
+  number: number;
+  boolean: boolean;
+  array: [];
+  object: {};
+} = {
+  null: undefined,
   string: undefined, // replace null with a string
   number: undefined, // replace null with a number
   boolean: undefined, // replace null with a boolean

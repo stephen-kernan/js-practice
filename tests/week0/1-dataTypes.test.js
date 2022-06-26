@@ -1,4 +1,4 @@
-import { dataTypes } from "../../challenges/week0/1-dataTypes";
+import { dataTypes } from "../../challenges/week0/1-dataTypes.ts";
 
 describe("0.1 - Datatypes", () => {
   it("string", () => {

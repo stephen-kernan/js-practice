@@ -12,13 +12,13 @@ by either comparing or examining one or more of the 7 available values.
 In the answers section below, write either true or false based on the corresponding question.
 */
 
-const valueOne = 13;
-const valueTwo = "13";
-const valueThree = 16;
-const valueFour = "seventeen";
-const valueFive = "eighteen";
-const valueSix = 0;
-const valueSeven = false;
+const valueOne: any = 13;
+const valueTwo: any = "13";
+const valueThree: any = 16;
+const valueFour: any = "seventeen";
+const valueFive: any = "eighteen";
+const valueSix: any = 0;
+const valueSeven: any = false;
 
 // hints to the right ----------------------->
 export const questionOne = valueOne == valueTwo; // double equality vs triple equality
@@ -29,7 +29,15 @@ export const questionFive = !valueSeven; // bang operator
 export const questionSix = !valueSeven || valueOne > valueThree; // double pipe
 export const questionSeven = !valueSeven && valueThree < valueOne; // double ampersand
 
-export const answer = {
+export const answer: {
+  questionOne: boolean;
+  questionTwo: boolean;
+  questionThree: boolean;
+  questionFour: boolean;
+  questionFive: boolean;
+  questionSix: boolean;
+  questionSeven: boolean;
+} = {
   questionOne: undefined, // replace undefined with whether testNumber is a number
   questionTwo: undefined, // replace undefined with whether or not testNumber is a whole number
   questionThree: undefined, // replace undefined with testNumber converted to a string

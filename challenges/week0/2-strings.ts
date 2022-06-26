@@ -16,7 +16,14 @@ DON'T MANUALLY TYPE THE ANSWERS
 
 const testString = "I see dead people";
 
-export const answer = {
+export const answer: {
+  howManyCharacters: number;
+  fifthCharacter: string;
+  upperCase: string;
+  lowerCase: string;
+  carvedUp: string[];
+  itsAliveee: string;
+} = {
   howManyCharacters: undefined, // replace undefined with the length of the string
   fifthCharacter: undefined, // replace undefined with the fifth character
   upperCase: undefined, // replace undefined with the string in uppercase
