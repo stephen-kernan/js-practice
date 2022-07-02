@@ -1,6 +1,6 @@
 import { toggleCapitalization } from "../../challenges/week1/5-toggleCapitalization";
 
-describe("finds first letter in a word", () => {
+describe.skip("finds first letter in a word", () => {
   it("returns the capitalized word if given word is uncapitalized", () => {
     expect(toggleCapitalization("gnarly")).toBe("Gnarly");
   });

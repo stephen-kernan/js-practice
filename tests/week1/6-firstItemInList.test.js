@@ -1,6 +1,6 @@
 import { findFirstItemInList } from "../../challenges/week1/6-firstItemInList";
 
-describe("finds first item in a list", () => {
+describe.skip("finds first item in a list", () => {
   const testList = ["Demon Slayer", "Jujutsu Kaisen"];
   it("returns the first item of a list with multiple items", () => {
     expect(findFirstItemInList(testList)).toBe(testList[0]);

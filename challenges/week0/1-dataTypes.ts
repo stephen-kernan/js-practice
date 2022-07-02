@@ -9,19 +9,19 @@ an example of the appropriate datatype.
 */
 
 export const dataTypes: {
-  null: null;
-  string: string;
-  number: number;
-  boolean: boolean;
-  array: [];
-  object: {};
+  null?: null;
+  string?: string;
+  number?: number;
+  boolean?: boolean;
+  array?: any[];
+  object?: {};
 } = {
-  null: undefined,
-  string: undefined, // replace null with a string
-  number: undefined, // replace null with a number
-  boolean: undefined, // replace null with a boolean
-  array: undefined, // replace null with an array
-  object: undefined, // replace null with an object
+  null: null,
+  string: "grannyass", // replace null with a string
+  number: 69, // replace null with a number
+  boolean: true, // replace null with a boolean
+  array: [true, false, true], // replace null with an array
+  object: {granny: 42069}, // replace null with an object
 };
 
 console.log(`String: ${typeof dataTypes.string === "string" ? "✅" : "❌"}`);

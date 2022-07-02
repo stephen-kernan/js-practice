@@ -1,6 +1,6 @@
 import { findFirstLetter } from "../../challenges/week1/3-firstLetter";
 
-describe("finds first letter in a word", () => {
+describe.skip("finds first letter in a word", () => {
   it("returns the first letter", () => {
     expect(findFirstLetter("gnarly")).toBe("g");
   });
