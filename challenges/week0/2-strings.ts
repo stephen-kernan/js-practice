@@ -14,22 +14,22 @@ you should be able to find the method that accomplishes the goal.
 DON'T MANUALLY TYPE THE ANSWERS
 */
 
-const testString = "I see dead people";
+export const testString = "I see dead people";
 
 export const answer: {
-  howManyCharacters: number;
-  fifthCharacter: string;
-  upperCase: string;
-  lowerCase: string;
-  carvedUp: string[];
-  itsAliveee: string;
+  howManyCharacters?: number;
+  fifthCharacter?: string;
+  upperCase?: string;
+  lowerCase?: string;
+  carvedUp?: string[];
+  itsAliveee?: string;
 } = {
-  howManyCharacters: undefined, // replace undefined with the length of the string
-  fifthCharacter: undefined, // replace undefined with the fifth character
-  upperCase: undefined, // replace undefined with the string in uppercase
-  lowerCase: undefined, // replace undefined with the string in lowercase
-  carvedUp: undefined, // replace undefined with the string split into a list of its individual words
-  itsAliveee: undefined, // replace undefined with the same string, replacing 'dead' with 'living'
+  howManyCharacters: testString.length, // replace undefined with the length of the string
+  fifthCharacter: testString.charAt(4), // replace undefined with the fifth character
+  upperCase: testString.toUpperCase(), // replace undefined with the string in uppercase
+  lowerCase: testString.toLowerCase(), // replace undefined with the string in lowercase
+  carvedUp: testString.split(' '), // replace undefined with the string split into a list of its individual words
+  itsAliveee: testString.replace('dead','living'), // replace undefined with the same string, replacing 'dead' with 'living'
 };
 
 export const carvedCorrectly =

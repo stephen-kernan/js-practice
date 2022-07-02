@@ -1,6 +1,6 @@
 import { findFirstFiveItemsInList } from "../../challenges/week1/7-firstFiveItemsInList";
 
-describe("finds first five items in list", () => {
+describe.skip("finds first five items in list", () => {
   const testList = [
     "Demon Slayer",
     "Jujutsu Kaisen",

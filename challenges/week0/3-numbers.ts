@@ -7,18 +7,18 @@ Fill in the answers based on the description using the most relevant method for
 the Number datatype.
 */
 
-const testNumber: number = 5.25;
+export const testNumber: number = 5.25;
 
 export const answer: {
-  isNotNumber: boolean;
-  isWholeNumber: boolean;
-  toString: string;
-  oneFixedDecimal: string;
+  isNotNumber?: boolean;
+  isWholeNumber?: boolean;
+  toString?: string;
+  oneFixedDecimal?: string;
 } = {
-  isNotNumber: undefined, // replace undefined with whether testNumber is a number
-  isWholeNumber: undefined, // replace undefined with whether or not testNumber is a whole number
-  toString: undefined, // replace undefined with testNumber converted to a string
-  oneFixedDecimal: undefined, // replace undefined with testNumber at only one, fixed decimal place
+  isNotNumber: Number.isNaN(testNumber), // replace undefined with whether testNumber is a number
+  isWholeNumber: Number.isInteger(testNumber), // replace undefined with whether or not testNumber is a whole number
+  toString: testNumber.toString(), // replace undefined with testNumber converted to a string
+  oneFixedDecimal: testNumber.toFixed(1), // replace undefined with testNumber at only one, fixed decimal place
 };
 
 console.log(`isNotNumber: ${!answer.isNotNumber ? "✅" : "❌"}`);

@@ -1,7 +1,7 @@
 import { combineUserName } from "../../challenges/week1/2-combineUserName";
 
 
-describe("combines a user's first and last name", () => {
+describe.skip("combines a user's first and last name", () => {
   it("returns the combined name", () => {
     expect(combineUserName("Sly", "Cooper")).toBe("Sly Cooper");
   });

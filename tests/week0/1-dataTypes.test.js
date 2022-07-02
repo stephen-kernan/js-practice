@@ -1,25 +1,39 @@
 import { dataTypes } from "../../challenges/week0/1-dataTypes.ts";
 
 describe("0.1 - Datatypes", () => {
-  it("string", () => {
-    expect(typeof dataTypes.string).toBe("string");
+  it("example", () => {
+    expect(dataTypes).not.toBeNull();
   });
 
-  it("number", () => {
-    expect(typeof dataTypes.string).toBe("number");
-  });
+  if (dataTypes.string) {
+    it("string", () => {
+      expect(typeof dataTypes.string).toBe("string");
+    });
+  }
 
-  it("boolean", () => {
-    expect(typeof dataTypes.string).toBe("boolean");
-  });
+  if (dataTypes.string) {
+    it("number", () => {
+      expect(typeof dataTypes.number).toBe("number");
+    });
+  }
 
-  it("array", () => {
-    expect(Array.isArray(dataTypes.array)).toBeTruthy();
-  });
+  if (dataTypes.string) {
+    it("boolean", () => {
+      expect(typeof dataTypes.boolean).toBe("boolean");
+    });
+  }
 
-  it("object", () => {
-    expect(
-      typeof dataTypes.object === "object" && Array.isArray(dataTypes.object)
-    ).toBeTruthy();
-  });
+  if (dataTypes.string) {
+    it("array", () => {
+      expect(Array.isArray(dataTypes.array)).toBeTruthy();
+    });
+  }
+
+  if (dataTypes.object) {
+    it("object", () => {
+      expect(
+        typeof dataTypes.object === "object"
+      ).toBeTruthy();
+    });
+  }
 });

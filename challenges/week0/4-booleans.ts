@@ -12,6 +12,13 @@ by either comparing or examining one or more of the 7 available values.
 In the answers section below, write either true or false based on the corresponding question.
 */
 
+// Example: Determine if Drake's new album 'Honestly, Nevermind' is mid based on the maiden count and ratio,
+//          Then, set exampleAnswer to the correct value
+export let maidens = 0;
+export let ratio = true;
+export const isHonestlyNevermindMid = ratio && maidens == 0;
+export const exampleAnswer = true;
+
 const valueOne: any = 13;
 const valueTwo: any = "13";
 const valueThree: any = 16;
@@ -30,21 +37,21 @@ export const questionSix = !valueSeven || valueOne > valueThree; // double pipe
 export const questionSeven = !valueSeven && valueThree < valueOne; // double ampersand
 
 export const answer: {
-  questionOne: boolean;
-  questionTwo: boolean;
-  questionThree: boolean;
-  questionFour: boolean;
-  questionFive: boolean;
-  questionSix: boolean;
-  questionSeven: boolean;
+  questionOne?: boolean;
+  questionTwo?: boolean;
+  questionThree?: boolean;
+  questionFour?: boolean;
+  questionFive?: boolean;
+  questionSix?: boolean;
+  questionSeven?: boolean;
 } = {
-  questionOne: undefined, // replace undefined with whether testNumber is a number
-  questionTwo: undefined, // replace undefined with whether or not testNumber is a whole number
-  questionThree: undefined, // replace undefined with testNumber converted to a string
-  questionFour: undefined, // replace undefined with testNumber at only one, fixed decimal place
-  questionFive: undefined, // replace undefined with testNumber at only one, fixed decimal place
-  questionSix: undefined, // replace undefined with testNumber at only one, fixed decimal place
-  questionSeven: undefined, // replace undefined with testNumber at only one, fixed decimal place
+  questionOne: true, // replace undefined with whether testNumber is a number
+  questionTwo: false, // replace undefined with whether or not testNumber is a whole number
+  questionThree: true, // replace undefined with testNumber converted to a string
+  questionFour: true, // replace undefined with testNumber at only one, fixed decimal place
+  questionFive: true, // replace undefined with testNumber at only one, fixed decimal place
+  questionSix: true, // replace undefined with testNumber at only one, fixed decimal place
+  questionSeven: false, // replace undefined with testNumber at only one, fixed decimal place
 };
 
 console.log(`questionOne: ${answer.questionOne === questionOne ? "✅" : "❌"}`);
