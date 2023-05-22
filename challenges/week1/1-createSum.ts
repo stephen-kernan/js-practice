@@ -1,15 +1,14 @@
-import { createInterface } from "readline";
+// PROMPT: Create a function that returns the sum of two parameters
 
-// create a function that returns the sum of two numbers
-// if the input is bad, return a string that says 'Error processing data'
+// ** UNCOMMENT HERE TO SOLVE **
+// export function createSum() {
+//   // do something here
+//
+// }
 
-export const createSum = (a: number, b: number): number | null => {
-  let answer: number | null = null;
-  // do something here
-  return answer;
-};
+// UNCOMMENT EVERYTHING BELOW THIS LINE TO TRY IT OUT IN TERMINAL
+// import { createInterface } from 'readline'
 
-// UNCOMMENT EVERYTHING IN THIS LINE TO TRY IT OUT IN TERMINAL
 // const term = createInterface({
 //   input: process.stdin,
 //   output: process.stdout,

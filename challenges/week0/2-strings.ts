@@ -14,7 +14,7 @@ you should be able to find the method that accomplishes the goal.
 DON'T MANUALLY TYPE THE ANSWERS
 */
 
-export const testString = "I see dead people";
+export const testString = 'I see dead people'
 
 export const answer: {
   howManyCharacters?: number;
@@ -29,25 +29,24 @@ export const answer: {
   upperCase: testString.toUpperCase(), // replace undefined with the string in uppercase
   lowerCase: testString.toLowerCase(), // replace undefined with the string in lowercase
   carvedUp: testString.split(' '), // replace undefined with the string split into a list of its individual words
-  itsAliveee: testString.replace('dead','living'), // replace undefined with the same string, replacing 'dead' with 'living'
-};
+  itsAliveee: testString.replace('dead', 'living'), // replace undefined with the same string, replacing 'dead' with 'living'
+}
 
-export const carvedCorrectly =
-  answer.carvedUp?.length === 4 &&
-  answer.carvedUp?.includes("I") &&
-  answer.carvedUp?.includes("see");
+export const carvedCorrectly = answer.carvedUp?.length === 4
+  && answer.carvedUp?.includes('I')
+  && answer.carvedUp?.includes('see')
 
 console.log(
-  `howManyCharacters: ${answer.howManyCharacters === 17 ? "✅" : "❌"}`
-);
-console.log(`fifthCharacter: ${answer.fifthCharacter === "e" ? "✅" : "❌"}`);
+  `howManyCharacters: ${answer.howManyCharacters === 17 ? '✅' : '❌'}`,
+)
+console.log(`fifthCharacter: ${answer.fifthCharacter === 'e' ? '✅' : '❌'}`)
 console.log(
-  `upperCase: ${answer.upperCase === "I SEE DEAD PEOPLE" ? "✅" : "❌"}`
-);
+  `upperCase: ${answer.upperCase === 'I SEE DEAD PEOPLE' ? '✅' : '❌'}`,
+)
 console.log(
-  `lowerCase: ${answer.lowerCase === "i see dead people" ? "✅" : "❌"}`
-);
-console.log(`carvedUp: ${carvedCorrectly ? "✅" : "❌"}`);
+  `lowerCase: ${answer.lowerCase === 'i see dead people' ? '✅' : '❌'}`,
+)
+console.log(`carvedUp: ${carvedCorrectly ? '✅' : '❌'}`)
 console.log(
-  `itsAliveee: ${answer.itsAliveee === "I see living people" ? "✅" : "❌"}`
-);
+  `itsAliveee: ${answer.itsAliveee === 'I see living people' ? '✅' : '❌'}`,
+)

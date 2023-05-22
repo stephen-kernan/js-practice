@@ -9,31 +9,31 @@ the Number datatype.
 
 // Example: Construct an array called pets that contains each of the Kernan pets' names
 
-export const pets = ["Belle", "Pongo", "Linus"];
+export const pets = ['Belle', 'Pongo', 'Linus']
 
 // 1. Add a number to this array
-export const firstQuestion: number[] = [1, 2, 3];
+export const firstQuestion: number[] = [1, 2, 3]
 // do something here to add the value
-firstQuestion.push(4); // replace this value
-export const firstAnswer: number[] = firstQuestion;
-export const firstMethod: string | null = null; // fill in the name of the method you used
+firstQuestion.push(4) // replace this value
+export const firstAnswer: number[] = firstQuestion
+export const firstMethod: string | null = null // fill in the name of the method you used
 
 // 2. Set the questionTwo variable to the last item in the array `firstQuestion`
-export const secondAnswer: number | null = null; // replace this value
-export const secondMethod: string | null = null; // fill in the name of the method you used
+export const secondAnswer: number | null = null // replace this value
+export const secondMethod: string | null = null // fill in the name of the method you used
 
 // 3. Set the value of `combinedList` to a new array that combines the array `firstQuestion` and the following array `thirdQuestion`.
-export const thirdQuestion: number[] = [10, 11, 12];
-export const thirdAnswer: number[] | null = null; // replace this value
-export const thirdMethod: string = ""; // fill in the name of the method you used
+export const thirdQuestion: number[] = [10, 11, 12]
+export const thirdAnswer: number[] | null = null // replace this value
+export const thirdMethod: string = '' // fill in the name of the method you used
 
 // 4. Combine the items into a string with each word separated by a space using a built-in array method
-export const fourthQuestion: string[] = ["Arrays", "are", "cool"];
-export const fourthAnswer: string | null = null;
-export const fourthMethod: string | null = null;
+export const fourthQuestion: string[] = ['Arrays', 'are', 'cool']
+export const fourthAnswer: string | null = null
+export const fourthMethod: string | null = null
 
 // run this script to see what your answers are
-console.log(`firstAnswer: ${firstAnswer}`);
-console.log(`secondAnswer: ${secondAnswer}`);
-console.log(`thirdAnswer: ${thirdAnswer}`);
-console.log(`fourthAnswer: ${fourthAnswer}`);
+console.log(`firstAnswer: ${firstAnswer}`)
+console.log(`secondAnswer: ${secondAnswer}`)
+console.log(`thirdAnswer: ${thirdAnswer}`)
+console.log(`fourthAnswer: ${fourthAnswer}`)
