@@ -8,7 +8,7 @@
     "test:current": "jest /tests/week1"
   },
   "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "@babel/plugin-transform-modules-commonjs": "^7.21.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.17.12",
     "@types/jest": "^28.1.3",
